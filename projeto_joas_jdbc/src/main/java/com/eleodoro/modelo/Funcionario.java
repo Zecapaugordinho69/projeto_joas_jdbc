@@ -1,7 +1,7 @@
 package com.eleodoro.modelo;
 
 public class Funcionario {
-     
+
     private String nome;
     private String login;
     private String senha;
@@ -81,8 +81,15 @@ public class Funcionario {
         return true;
     }
 
-   
+    public void setId(int i) {
+        // Auto-generated
+        throw new UnsupportedOperationException("Unimplemented method 'setId'");
+    }
+
+    public int getId() {
+        //Auto-generated
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
 
     
-
 }
