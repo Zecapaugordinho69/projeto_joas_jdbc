@@ -1,37 +1,33 @@
-package com.eleodoro.conexão;
+package com.eleodoro.conexao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
+    private  String url = "jdbc:mysql://localhost:3306/caixa";
+    private  String user = "root";
+    private  String password = "escola";
 
-    private static final String url = "jdbc:mysql://localhost:3306/bancodedados";
-    private static final String user = "root";
-    private static final String password = "";
+    private Connection conn;
 
-    private static Connection conn;
+    public Connection getConexao() {
 
-    public static Connection getConecao() {
 
         try {
             if(conn == null) {
                 conn = DriverManager.getConnection(url, user, password);
-                System.out.println("Conectado com sucesso!");
+                System.out.println("Conectado com sucesso");
                 return conn;
             } else {
                 return conn;
             }
         } catch (SQLException e) {
-            e.printStracktrece();
-            System.out.println("Erro de conexão")
+            e.printStackTrace();
+            System.out.println("Erro de conexao");
             return null;
         }
     }
 
-    public static Object getConexao() {
-        return null;
-    }
-   
     
 }
