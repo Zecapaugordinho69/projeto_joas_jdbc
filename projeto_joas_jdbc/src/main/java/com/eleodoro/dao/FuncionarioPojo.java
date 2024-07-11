@@ -1,11 +1,11 @@
 package com.eleodoro.dao;
 
 public class FuncionarioPojo {
-    
+
     private String nome;
     private String login;
     private String senha;
-   
+    
     public FuncionarioPojo() {
     }
 
@@ -33,7 +33,16 @@ public class FuncionarioPojo {
         this.senha = senha;
     }
 
+    public Object getId() {
+        // Auto-generated 
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
 
+    public void setId(int int1) {
+        // Auto-generated
+        throw new UnsupportedOperationException("Unimplemented method 'setId'");
+    }
 
+    
     
 }
